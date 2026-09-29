@@ -1,0 +1,10 @@
+{
+  "dataset_source": "Tencent / KDD Cup 2012, distributed through OpenML dataset 1220 (version 5)",
+  "dataset_page": "https://www.openml.org/d/1220",
+  "download_url": "https://openml.org/data/v1/download/184157/Click_prediction_small.arff",
+  "source_sha256": "76c9f98a9a11e32b05974704228811cd6ed35f535d3b0173c4e602b3f1366c20",
+  "local_file": "clicks.csv",
+  "local_sha256": "a31e7ed1237d1d78ae0556e986b583360effdf2c8b5d67a009410be82ec73043",
+  "licence": "Public, as declared by OpenML dataset metadata; upstream terms are not separately specified there",
+  "preparation": "39,948 ad-context records distributed by OpenML as Click_prediction_small. There are 33,220 no-click and 6,728 click labels before deduplication; the publisher explicitly downsampled negatives to roughly a 5:1 ratio. This is a replacement benchmark, not the original receipt-ad MySQL dataset. A label denotes at least one click in an aggregated ad context, not the click count divided by impressions. The raw CSV is kept local and restored with `fetch_data.py`; only metrics and derived results are published, since the OpenML licence field is the generic 'Public'."
+}
