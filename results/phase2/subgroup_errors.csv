@@ -1,0 +1,7 @@
+feature,group,rows,positives,false_positives,false_negatives,brier_score
+depth,1,2221,413,533,231,0.14694529
+depth,2,3853,744,1259,272,0.14912868
+depth,3,1910,234,521,104,0.10297759
+position,1,4900,1055,2162,309,0.16382434
+position,2,2479,289,148,253,0.10180771
+position,3,605,47,3,45,0.07028909

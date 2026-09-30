@@ -1,0 +1,32 @@
+{
+  "level": 0.95,
+  "method": "Cluster bootstrap of held-out users/anonymous contexts",
+  "replicates": 200,
+  "intervals": {
+    "average_precision": {
+      "low": 0.263934445360299,
+      "high": 0.3075536821748438
+    },
+    "f1": {
+      "low": 0.33450856167191495,
+      "high": 0.3636115417828573
+    },
+    "log_loss": {
+      "low": 0.4282433459165197,
+      "high": 0.45398252230045494
+    }
+  },
+  "recall_wilson": {
+    "estimate": 0.5636232925952552,
+    "low": 0.5374212721578293,
+    "high": 0.5894748699669174,
+    "n": 1391
+  },
+  "precision_wilson": {
+    "estimate": 0.25314820794317083,
+    "low": 0.23814668199554223,
+    "high": 0.26876135561128645,
+    "n": 3097
+  },
+  "limits": "Wilson intervals assume independent rows; cluster bootstrap is used when IDs exist. Neither method establishes future-domain performance or accounts for two-day temporal dependence."
+}

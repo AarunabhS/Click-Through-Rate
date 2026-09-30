@@ -1,3 +1,29 @@
+# Click Propensity and Ranking
+
+Assess ad-context ranking, probability reliability, and error patterns under explicit sampling limits.
+
+**Start with the [case study](CASE_STUDY.md), [executed phase-two notebook](CTR_Phase2.ipynb), or [current results report](results/phase2/REPORT.md).**
+
+Average precision **0.2850**, precision **25.3%**, recall **56.4%**. Log loss **0.4411** versus baseline **0.4627**.
+
+![Current reliability and bin support](results/phase2/reliability.png)
+
+The new evaluation adds independent calibration, uncertainty intervals, three development-only stability checks,
+and auditable error analysis. A representative temporal benchmark was investigated through Criteo’s official dataset pages. The downloadable alternatives are substantially larger, require different schemas, and do not establish the missing original campaign’s prevalence or timestamps. No bulk archive was downloaded. Population CTR and future-campaign validation require documented impression logs; calibration alone cannot reconstruct unknown sampling.
+
+```bash
+python -m pip install -r requirements.txt
+python fetch_data.py
+python phase2.py
+```
+
+Use a virtual environment; see [CASE_STUDY.md](CASE_STUDY.md) for the complete setup and interpretation.
+The scripts use local project caches. Every original tracked file is retained. See [CHANGELOG.md](CHANGELOG.md)
+and [AUDIT/phase2-file-changes.json](AUDIT/phase2-file-changes.json) for this pass’s changes.
+
+<details>
+<summary>Preserved phase-one benchmark and reproduction guide</summary>
+
 # Click Through Rate / Click Propensity
 
 Estimate whether a search ad will be clicked and evaluate ranking quality and probability quality on a documented public benchmark.
@@ -74,3 +100,6 @@ python -m pytest -q
 The notebook and CLI call the same implementation. Fixed seeds, pinned dependencies, and recorded input hashes
 make the published run reproducible. Generated model files are local and ignored by Git.
 See [REVIEW_NOTES.md](REVIEW_NOTES.md) for the repairs and remaining limits.
+
+
+</details>

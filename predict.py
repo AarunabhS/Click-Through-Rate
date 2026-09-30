@@ -3,11 +3,13 @@ import argparse
 from pathlib import Path
 import joblib
 import pandas as pd
+import analysis
 from analysis import ROOT, prepare_features
 
 
 def predict(data: Path, model_path: Path, output: Path):
-    frame = pd.read_csv(data)
+    # Preserve categorical identifier strings, including leading zeros and missing IDs.
+    frame = pd.read_csv(data, dtype={name: 'string' for name in analysis.CATEGORICAL})
     bundle = joblib.load(model_path)
     scores = bundle["model"].predict_proba(prepare_features(frame))[:, 1]
     result = pd.DataFrame({"row_id": range(len(frame)), "positive_score": scores,
