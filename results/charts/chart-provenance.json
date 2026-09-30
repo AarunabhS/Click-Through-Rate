@@ -1,0 +1,40 @@
+{
+  "project": "Click-Through-Rate",
+  "source_directory": "results/phase2",
+  "source_sha256": {
+    "metrics.json": "829dd57db835f43486b867086f9d84065e605a54c7eba8fc8db6a9ff5f962efe",
+    "predictions.csv": "4a751a1b8bde29c62a7ba282f65d72f5e459945d29d36d513b43bcdf53a181f2",
+    "metrics.csv": "cc48333491d3b544964faff424cb371ee57ac749dbe6bf0c16bee43e29bb1c3f",
+    "ranking_lift.csv": "8cc98bdb4b18b6e803bc09874825c6052a93b43be4a00c78a0b21a63f37cf6c4",
+    "subgroup_errors.csv": "ee5ed1e46886f046a5794bec382eade71994922cf6bd5743ce4142bf5974977d"
+  },
+  "model": "logistic_regression",
+  "model_refitted": false,
+  "network_requests": 0,
+  "deleted_files": [],
+  "checks": "Counts, selected metrics and key policy points checked against recorded metrics; figure labels checked for clipping.",
+  "charts": [
+    {
+      "chart": "ctr_gains",
+      "interpretation": "Fractions were set in advance; no test-based threshold selection. Rates and lift describe the downsampled benchmark, not natural campaign CTR.",
+      "png": "ctr_gains.png",
+      "svg": "ctr_gains.svg"
+    },
+    {
+      "chart": "ctr_model_loss",
+      "interpretation": "Probabilities describe the sampled benchmark. Small differences cannot restore unknown population prevalence, and no statistical superiority is inferred.",
+      "png": "ctr_model_loss.png",
+      "svg": "ctr_model_loss.svg"
+    },
+    {
+      "chart": "ctr_position_errors",
+      "interpretation": "Whiskers are Wilson 95% row intervals, not clustered campaign inference. These descriptive position associations do not establish a causal placement effect.",
+      "png": "ctr_position_errors.png",
+      "svg": "ctr_position_errors.svg"
+    }
+  ],
+  "dashboard": [
+    "dashboard.png",
+    "dashboard.svg"
+  ]
+}

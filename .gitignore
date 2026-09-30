@@ -12,3 +12,6 @@ data/clicks.csv
 
 # Phase-two local inputs and text; original files are preserved.
 results/phase2/local/
+
+# Local plotting runtime cache; exported charts remain tracked.
+results/charts/local/

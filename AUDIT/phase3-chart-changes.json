@@ -1,0 +1,99 @@
+{
+  "previous_head": "6e559fe56b6e74f04317922881cb27e7275bfdf3",
+  "changes": [
+    {
+      "path": ".gitignore",
+      "action": "modified",
+      "before_sha256": "772bc8d520b946e4813f8c556aede248a12158d906dba41b82cf40fd4ec3d4a4",
+      "after_sha256": "d5431065ffc6c71dc6e5ec859e9a7ef20331b99b9e89c7cf34e84cc243f081ac",
+      "bytes": 319
+    },
+    {
+      "path": "README.md",
+      "action": "modified",
+      "before_sha256": "439723a437dab032cd02826cd9eacf97b5143d36c095aa3ab7e834a5dd01af80",
+      "after_sha256": "d0fd6d6c8f081dd691844c1d3583d5e2c4a590f1510f75023d51c310a2f668e4",
+      "bytes": 6085
+    },
+    {
+      "path": "plot_gallery.py",
+      "action": "added",
+      "before_sha256": null,
+      "after_sha256": "d82244dd526989b121b9692ab40c3c2329571f90f3698eda8ab8d2c0ebbe98e5",
+      "bytes": 24798
+    },
+    {
+      "path": "results/charts/README.md",
+      "action": "added",
+      "before_sha256": null,
+      "after_sha256": "1f7c0e1ab7deb9886d3dd7b98af8b6b1b9001f7f80fe282c25f200acd9ca6935",
+      "bytes": 1453
+    },
+    {
+      "path": "results/charts/chart-provenance.json",
+      "action": "added",
+      "before_sha256": null,
+      "after_sha256": "927cb7d704a69d5a32c7b1638366d72e1c8e29b68f3a0964ae0dd06402a383db",
+      "bytes": 1758
+    },
+    {
+      "path": "results/charts/ctr_gains.png",
+      "action": "added",
+      "before_sha256": null,
+      "after_sha256": "b8d373f76f25a1e5777d1e03e28af27780b03f659cf2fb5d74b4db22b5e7e2f7",
+      "bytes": 233902
+    },
+    {
+      "path": "results/charts/ctr_gains.svg",
+      "action": "added",
+      "before_sha256": null,
+      "after_sha256": "e870764990106181d51b96ddae0ee884854e994be2a9f75dcc2bdd2c249ce175",
+      "bytes": 12087
+    },
+    {
+      "path": "results/charts/ctr_model_loss.png",
+      "action": "added",
+      "before_sha256": null,
+      "after_sha256": "90ce9c149d9242e11382d30e763e3069eac7386f19cf775cf4020f5b5ef1e517",
+      "bytes": 143985
+    },
+    {
+      "path": "results/charts/ctr_model_loss.svg",
+      "action": "added",
+      "before_sha256": null,
+      "after_sha256": "0dcdcc50c8181eeb3cd55ef3f38f26233bf802bc8743f7fc270f5f973e16fadc",
+      "bytes": 12274
+    },
+    {
+      "path": "results/charts/ctr_position_errors.png",
+      "action": "added",
+      "before_sha256": null,
+      "after_sha256": "4a21327378b1338acf962fd05c5eba4409f74e9fa9e3b8ae874a5219cbc2872d",
+      "bytes": 164579
+    },
+    {
+      "path": "results/charts/ctr_position_errors.svg",
+      "action": "added",
+      "before_sha256": null,
+      "after_sha256": "2988894bb14c2b83d383ffc2e8d1d5ccfd8b079eda69c9ec1df6b65a8e9c48df",
+      "bytes": 13100
+    },
+    {
+      "path": "results/charts/dashboard.png",
+      "action": "added",
+      "before_sha256": null,
+      "after_sha256": "2976dbde09056983df5a378220424c4d5d1fc68d11c7b4e3ac27d62075fd2a1f",
+      "bytes": 408919
+    },
+    {
+      "path": "results/charts/dashboard.svg",
+      "action": "added",
+      "before_sha256": null,
+      "after_sha256": "3393d1c310fb17bf0eeed3befd05b64e1e107f3a60ee9ce124f1fbfaaa097a30",
+      "bytes": 34675
+    }
+  ],
+  "deleted_files": [],
+  "verification": "Chart counts and metrics match saved results; PNG/SVG labels inspected; source hashes recorded. No model refitting, data downloads, or original result edits.",
+  "note": "The manifest excludes its own hash; that hash is retained in the local publication receipt."
+}
